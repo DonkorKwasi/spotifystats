@@ -1,0 +1,13 @@
+<mat-toolbar>
+    <span>Spotifystats</span>
+</mat-toolbar>
+
+<form>
+    <input type="text"  placeholder="Search for a song" [(ngModel)]="title"  name = "searchbar">
+    <input type="submit" (click)="search()" name = "enter">
+</form>
+
+<mat-card>
+    <mat-card-content style="text-align: center;">This site is designed to help artists, or those curious, quickly see important information about any song they wish to find</mat-card-content>
+</mat-card>
+        

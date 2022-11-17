@@ -1,0 +1,25 @@
+<mat-toolbar>
+    <span>Spotifystats</span>
+</mat-toolbar>
+
+<h1 style="text-align: center" *ngIf="loaded == true">Click on a song to see more stats</h1>
+<h1 style="text-align: center" *ngIf="loaded == false">Loading...</h1>
+<mat-grid-list cols="4"  rows ="2"rowHeight="2:1">
+    <mat-grid-tile *ngFor="let song of songList | paginate: {itemsPerPage: 20, currentPage: p, totalItems: songList.length} index as i" >
+<mat-card (click)="openSong(i)">
+
+    
+        
+    <mat-card-title >{{(song.name.length > 30)? (song.name | slice:0:30)+'...':(song.name) }}</mat-card-title>
+    <mat-card-subtitle>
+        Artist(s):  {{artistStr[  (i +((p-1) * 20))]}}
+    </mat-card-subtitle>
+
+<img mat-card-image src="{{song.album.images[1].url}}">
+
+</mat-card>
+</mat-grid-tile>
+</mat-grid-list>
+<div *ngIf="loaded == true">
+<pagination-controls (pageChange)="p = $event"></pagination-controls>
+</div>

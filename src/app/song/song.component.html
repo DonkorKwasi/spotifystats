@@ -1,0 +1,69 @@
+<mat-toolbar>
+    <span>Spotifystats</span>
+</mat-toolbar>
+<div>
+    <h1>{{song.name}}</h1>
+    <h4>by: {{artistStr}}</h4>
+<img  style="float: left;" src="{{song.album.images[1].url}}">
+<p> &nbsp; &nbsp; &nbsp;   length: {{mins}}:{{seconds}}</p>
+<br/>
+<br/>
+<p> &nbsp; &nbsp; &nbsp;   Explicit: {{explicit}}</p>
+<br/>
+<br/>
+<p> &nbsp; &nbsp; &nbsp;   Popularity Score: {{song.popularity}}</p>
+<br/>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<h2 style="text-align: center;" >Details</h2>
+<div>
+
+    <mat-card>
+   <mat-grid-list cols="3"  rows ="3"rowHeight="4rem" style = "height: 100px;">
+    <mat-grid-tile>
+<p>key: {{key}}</p>
+</mat-grid-tile>
+<mat-grid-tile>
+<p>danceability score: {{details.danceability}}</p>
+</mat-grid-tile>
+<mat-grid-tile>
+<p>energy score: {{details.energy}}</p>
+</mat-grid-tile>
+
+<mat-grid-tile>
+<p>instrumentalness score: {{details.instrumentalness}}</p>
+</mat-grid-tile>
+<mat-grid-tile>
+<p>liveness score: {{details.liveness}}</p>
+</mat-grid-tile>
+<mat-grid-tile>
+<p>loudness: {{details.loudness}} db</p>
+</mat-grid-tile>
+<mat-grid-tile>
+<p>mode: {{mode}}</p>
+</mat-grid-tile>
+<mat-grid-tile>
+<p>speechiness score: {{details.speechiness}}</p>
+</mat-grid-tile>
+<mat-grid-tile>
+<p>tempo: {{details.tempo}}(bpm)</p>
+</mat-grid-tile>
+
+<mat-grid-tile>
+<p>time signature: {{details.time_signature}}/4</p>
+</mat-grid-tile>
+<mat-grid-tile>
+<p>valence score: {{details.valence}}</p>
+</mat-grid-tile>
+
+</mat-grid-list> 
+
+</mat-card>
+
+</div>

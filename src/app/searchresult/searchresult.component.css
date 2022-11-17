@@ -1,0 +1,26 @@
+img  {
+height:150px;
+width: 150px;
+justify-content: center;
+}
+
+
+.mat-card {
+    display:list-item;
+    width: calc(100% - 70px);
+    height: calc(100% - 70px);
+ margin-bottom: 20px;
+ margin-right:  20px;
+ margin-left: 23px ;
+
+text-align:center;
+
+}
+.song{
+    width: 100%;
+   
+}
+.mat-grid-list
+{
+   display :block
+}

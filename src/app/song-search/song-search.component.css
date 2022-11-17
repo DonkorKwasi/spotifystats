@@ -1,0 +1,39 @@
+
+
+::ng-deep .mat-input-underline {
+    display: none;
+}
+
+input[type="text"] {
+    border-radius: 25px;
+    border: 2px solid #609;
+    padding: 20px; 
+    width: 200px;
+    height: 15px;   
+    display: block;
+  margin-right: auto;
+  margin-left: auto; 
+  margin-top: 50px;
+}
+
+
+input[type="submit"] {
+  text-align: center;
+  border-radius: 25px;
+  
+  width: 60px;
+  height: 60px;   
+  display: block;
+margin-right: auto;
+margin-left: auto; 
+margin-top: 10px;
+margin-bottom: 10px;
+
+}
+
+.contain{
+width: 70px;
+justify-content: center;
+align-items: center;
+display: flex;
+}
