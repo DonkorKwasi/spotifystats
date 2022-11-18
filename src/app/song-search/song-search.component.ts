@@ -13,6 +13,7 @@ export class SongSearchComponent implements OnInit {
 title :string = ""
 list : any
   ngOnInit(): void {
+    this.spot.dummyToken();
   }
 
   async search()

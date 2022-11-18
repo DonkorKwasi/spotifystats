@@ -69,6 +69,16 @@ console.log(this.idList);
 
   }
 
+  async dummyToken()
+  {
+
+    var tokenresp =   this.http.get("token")
+  var token: any 
+   await firstValueFrom(tokenresp).then(tokenSpotify => {
+     token = tokenSpotify;
+     this.tokenStr = token
+   })
+  }
         
 
 // change this to use get multiple tracks as it will mostlikely be less laggy 
