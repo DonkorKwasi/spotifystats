@@ -166,7 +166,7 @@ console.log(response2.tracks.items.length);
   this.idListBy50.push(response2.tracks.items);
   
   console.log(next);
-  if(response2.tracks.next != null && this.counter  < 9 )
+  if(response2.tracks.next != null && this.counter  < 5 )
   {
     this.counter = this.counter + 1;
     console.log(this.counter);
